@@ -1,0 +1,116 @@
+:root {
+    --primary-bg: #1E1E1E;
+    --secondary-bg: #2C2C2C;
+    --accent: #0D6EFD;
+    --text-primary: #F1F1F1;
+    --text-secondary: #B0B0B0;
+    --button-bg: #17A2B8;
+    --button-hover: #138496;
+    --border: #3D3D3D;
+    --link: #00BFFF;
+  }
+  
+  .header {
+    background-color: var(--primary-bg);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    text-decoration: none;
+  }
+  
+  .logo h1 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--secondary-bg);
+    color: var(--link);
+    transform: translateY(-2px);
+  }
+  
+  .nav-link.active {
+    background-color: var(--button-bg);
+    color: var(--text-primary);
+  }
+  
+  .nav-link.active:hover {
+    background-color: var(--button-hover);
+  }
+  
+  @media (max-width: 1199px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      max-width: 720px;
+    }
+    .logo h1 {
+      font-size: 1.6rem;
+    }
+    .nav {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      max-width: 540px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .logo h1 {
+      font-size: 1.4rem;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .nav-link {
+      width: 100%;
+      text-align: center;
+    }
+  }
