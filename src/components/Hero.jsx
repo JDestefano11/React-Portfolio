@@ -1,7 +1,7 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import '../styles/Hero.css'
+import "../styles/Hero.css";
 
 export const Hero = () => {
   return (
@@ -21,9 +21,7 @@ export const Hero = () => {
                         <span
                           key={key}
                           style={
-                            i < 3
-                              ? { color: "white" }
-                              : { color: "#ff8c00" }
+                            i < 3 ? { color: "white" } : { color: "#ff8c00" }
                           }
                         >
                           {char}
@@ -43,10 +41,10 @@ export const Hero = () => {
           </h1>
 
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptate minus minima eos, officiis amet, laborum pariatur vero
-            odio obcaecati mollitia quia, accusamus rerum omnis assumenda?
-            Ipsa voluptates repudiandae perferendis odio.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            minus minima eos, officiis amet, laborum pariatur vero odio
+            obcaecati mollitia quia, accusamus rerum omnis assumenda? Ipsa
+            voluptates repudiandae perferendis odio.
           </p>
           <div className="social-links">
             <a
@@ -68,16 +66,11 @@ export const Hero = () => {
             </a>
           </div>
           <div className="cta-buttons">
-            <a href="./Contact.jsx" className="cta-button">
+            <a href="./Contact" className="cta-button">
               Get in Touch
             </a>
-            <a
-              href="/path-to-your-resume.pdf"
-              className="cta-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
+            <a href="./Projects" className="cta-button">
+              Projects
             </a>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { Header } from '../src/components/Header';
-import { Home } from '../src/components/Home';
-import { About } from '../src/components/About';
-import { Projects } from '../src/components/Projects';
-import { Contact } from '../src/components/Contact';
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Header } from "../src/components/Header";
+import { Home } from "../src/components/Home";
+import { About } from "../src/components/About";
+import { Projects } from "../src/components/Projects";
+import { Contact } from "../src/components/Contact";
 
 export const App = () => {
   return (
