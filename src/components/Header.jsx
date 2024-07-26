@@ -1,19 +1,50 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Header.css';
+import React, { useState } from "react";
+import "../styles/Header.css";
+import { FaLaptopCode, FaBars, FaTimes } from "react-icons/fa";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="header">
+    <header>
       <div className="container">
-        <Link to="/" className="logo">
-          <h1>Joe Destefano</h1>
-        </Link>
-        <nav className="nav">
-          <Link to="./Home" className="nav-link">Home</Link>
-          <Link to="./About" className="nav-link">About Me</Link>
-          <Link to="./Projects" className="nav-link">Projects</Link>
-          <Link to="./Contact" className="nav-link">Contact</Link>
+        <div className="logo">
+          <FaLaptopCode className="icon" />
+          <h1>Portfolio</h1>
+        </div>
+        <div
+          className={`menu-icon ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        <nav className={isMenuOpen ? "open" : ""}>
+          <ul>
+            <li>
+              <a href="#home" onClick={toggleMenu}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={toggleMenu}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={toggleMenu}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={toggleMenu}>
+                Contact
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
