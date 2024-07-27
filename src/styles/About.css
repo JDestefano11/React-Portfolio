@@ -1,0 +1,133 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ff8c00;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-box {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-box h4 {
+  font-size: 1.25rem;
+  color: #ff8c00;
+  margin-bottom: 1rem;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skill-box ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+.skill-box ul li svg {
+  margin-right: 0.5rem;
+  color: #ff8c00;
+}
+.skills-title {
+  font-size: 2rem;
+  color: #ff8c00;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .skill-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+
+  .skill-box {
+    padding: 0.5rem;
+    max-width: 250px;
+  }
+
+  .skill-box h4 {
+    font-size: 1.125rem;
+  }
+
+  .skill-box ul li {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .skill-box h4 {
+    font-size: 1rem;
+  }
+}
