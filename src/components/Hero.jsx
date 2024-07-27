@@ -8,43 +8,34 @@ export const Hero = () => {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <h1>
+          <h1 className="name">
             <ReactTypingEffect
               text={["Joe Destefano"]}
-              cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-              displayTextRenderer={(text, i) => {
-                return (
-                  <h1 style={{ fontSize: "24px" }}>
-                    {text.split("").map((char, i) => {
-                      const key = `${i}`;
-                      return (
-                        <span
-                          key={key}
-                          style={
-                            i < 3 ? { color: "white" } : { color: "#ff8c00" }
-                          }
-                        >
-                          {char}
-                        </span>
-                      );
-                    })}
-                  </h1>
-                );
-              }}
+              speed={100}
+              eraseDelay={2000}
+              typingDelay={500}
+              cursorRenderer={(cursor) => (
+                <span className="cursor">{cursor}</span>
+              )}
+              displayTextRenderer={(text) => (
+                <span className="typed-text">
+                  {text.split("").map((char, i) => (
+                    <span
+                      key={i}
+                      className={i < 3 ? "white-text" : "orange-text"}
+                    >
+                      {char}
+                    </span>
+                  ))}
+                </span>
+              )}
             />
           </h1>
-          <h1
-            className="tagline"
-            style={{ fontSize: "3rem", marginTop: "-10px" }}
-          >
-            Full Stack Web Developer
-          </h1>
-
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
-            minus minima eos, officiis amet, laborum pariatur vero odio
-            obcaecati mollitia quia, accusamus rerum omnis assumenda? Ipsa
-            voluptates repudiandae perferendis odio.
+          <h2 className="tagline">Full Stack Web Developer</h2>
+          <p className="bio">
+            Passionate about creating innovative web solutions that make a
+            difference. Specializing in modern frameworks and clean, efficient
+            code.
           </p>
           <div className="social-links">
             <a
@@ -52,31 +43,31 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaGithub className="icon github" />
             </a>
             <a
               href="https://www.linkedin.com/in/joseph-destefano-7a1b21283"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaLinkedin className="icon linkedin" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
+              <FaTwitter className="icon twitter" />
             </a>
           </div>
           <div className="cta-buttons">
-            <a href="./Contact" className="cta-button">
+            <a href="./Contact" className="cta-button contact">
               Get in Touch
             </a>
-            <a href="./Projects" className="cta-button">
-              Projects
+            <a href="./Projects" className="cta-button projects">
+              View Projects
             </a>
           </div>
         </div>
         <div className="hero-image">
           <img
-            src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/348909787_1080813219556140_7304975076369353324_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XN9vGZfzsxEQ7kNvgEZNHPJ&_nc_ht=scontent-lga3-1.xx&oh=00_AYA-gpfroYOlPBgEUBtGvT5Q9S59oMzNOYLO31A6t_VGOQ&oe=66A9B0CC"
+            src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/348909787_1080813219556140_7304975076369353324_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XN9vGZfzsxEQ7kNvgEZNHPJ&_nc_ht=scontent-lga3-1.xx&oh=00_AYDR80SZZ7KWzt1n3aI4pfPPR08xRYPQI0SV8oWyQNU49w&oe=66AB024C"
             alt="Joe Destefano"
           />
         </div>
