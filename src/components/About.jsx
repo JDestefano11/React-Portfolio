@@ -22,33 +22,45 @@ export const About = () => {
         <div className="about-intro">
           <h2 className="section-title">About Me</h2>
           <p className="description">
-            I'm a passionate full-stack web developer with a love for creating
-            innovative and user-friendly web applications. With a strong
-            background in modern technologies like React, Node.js, and MongoDB,
-            I strive to deliver high-quality solutions that meet the needs of
-            clients and users alike.
-          </p>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            euismod, nisl nec tincidunt lacinia, nisl nisl aliquam nisl, eget
-            aliquam nisl nisl eget nisl.
+            Hello, and welcome to my portfolio! My name is Joe Destefano, and I
+            am a full-stack web developer with a passion for building innovative
+            and user-friendly web applications. Through the rigorous curriculum
+            of the CareerFoundry bootcamp, I gained a strong foundation in
+            modern technologies like React, Node.js, and MongoDB. I strive to
+            deliver high-quality solutions that meet the needs of clients and
+            users alike. My development philosophy revolves around creating
+            intuitive and engaging websites that provide seamless user
+            experiences. Whether it's building custom web applications or
+            optimizing existing ones for better performance, I believe in
+            delivering scalable and reliable solutions that exceed client
+            expectations.
           </p>
           <h2 className="section-title">Interests</h2>
           <p className="description">
-            Exploring new technologies, contributing to open-source projects,
-            and traveling with a focus on nature exploration. I enjoy immersing
-            myself in the latest tech trends, collaborating on community-driven
-            software, discovering new landscapes and wildlife, and experiencing
-            diverse cultures.
+            In my free time, I am always exploring new technologies to keep up
+            with the latest industry trends. I find joy in collaborating on
+            community-driven software initiatives and pushing the boundaries of
+            what's possible in the digital world. Outside of the tech realm, I
+            have a deep passion for traveling, especially when it involves
+            nature exploration. Venturing into new landscapes and immersing
+            myself in wildlife habitats allows me to find inspiration and
+            appreciation for the natural world. I also cherish the opportunity
+            to experience diverse cultures and traditions as I travel,
+            continuously expanding my horizons and understanding of the world
+            around me.
           </p>
           <h2 className="section-title">Goals</h2>
           <p className="description">
-            Eager to join a dynamic team to work on innovative projects and grow
-            as a developer. I aim to leverage my skills in technology and
-            passion for open-source contributions to create impactful solutions.
-            Additionally, I strive to continuously learn and adapt to new
-            challenges while fostering a collaborative and inclusive work
-            environment.
+            I am eager to join a dynamic team where I can work on innovative
+            projects and further develop my skills as a developer. My primary
+            goal is to leverage my expertise in technology to create impactful
+            solutions that make a difference. I am committed to continuously
+            learning and adapting to new challenges in the ever-evolving tech
+            industry. Moreover, I firmly believe in fostering a collaborative
+            and inclusive work environment where diverse perspectives are valued
+            and creativity can thrive. By achieving these goals, I am confident
+            in my ability to contribute to the success of a team and make a
+            meaningful impact on the projects I engage with.
           </p>
         </div>
         <h3 className="skills-title">Skills</h3>
