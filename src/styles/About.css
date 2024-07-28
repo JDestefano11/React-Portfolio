@@ -67,6 +67,7 @@
   padding: 0;
   margin: 0;
 }
+
 .skill-box ul li {
   display: flex;
   align-items: center;
@@ -75,11 +76,13 @@
   margin-bottom: 0.5rem;
   justify-content: center;
 }
+
 .skill-box ul li svg {
   margin-right: 0.5rem;
   color: #ff8c00;
   font-size: 1.5rem;
 }
+
 .skills-title {
   font-size: 2rem;
   color: #ff8c00;
