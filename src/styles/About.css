@@ -19,6 +19,7 @@
 .about-intro {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .section-title {
@@ -28,7 +29,7 @@
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ddd;
   line-height: 1.6;
 }
@@ -56,7 +57,7 @@
 }
 
 .skill-box h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #ff8c00;
   margin-bottom: 1rem;
 }
@@ -69,7 +70,7 @@
 .skill-box ul li {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #ddd;
   margin-bottom: 0.5rem;
   justify-content: center;
@@ -77,6 +78,7 @@
 .skill-box ul li svg {
   margin-right: 0.5rem;
   color: #ff8c00;
+  font-size: 1.5rem;
 }
 .skills-title {
   font-size: 2rem;
@@ -94,6 +96,7 @@
 @media (max-width: 768px) {
   .about-container {
     padding: 1rem;
+    font-size: 1rem;
   }
 
   .section-title {
@@ -124,10 +127,6 @@
   }
 
   .description {
-    font-size: 0.75rem;
-  }
-
-  .skill-box h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

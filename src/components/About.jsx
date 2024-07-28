@@ -83,29 +83,6 @@ export const About = () => {
               </li>
             </ul>
           </div>
-          <div className="skill-box">
-            <h4>Skills</h4>
-            <ul>
-              <li>
-                <FaBrain /> Critical Thinking
-              </li>
-              <li>
-                <FaUserFriends /> Leadership
-              </li>
-              <li>
-                <FaUsers /> Team Collaboration
-              </li>
-              <li>
-                <FaPuzzlePiece /> Problem Solving
-              </li>
-              <li>
-                <FaClipboardList /> Multi-tasking
-              </li>
-              <li>
-                <FaHourglassHalf /> Time Management
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
