@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
-import { FaLaptopCode, FaBars, FaTimes } from "react-icons/fa";
+import { FaLaptopCode, FaBars, FaTimes, FaDownload } from "react-icons/fa";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +42,17 @@ export const Header = () => {
             <li>
               <a href="#contact" onClick={toggleMenu}>
                 Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="/path/to/your/resume.pdf"
+                download="JoeDestefanoResume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-link"
+              >
+                <FaDownload /> Download Resume
               </a>
             </li>
           </ul>
