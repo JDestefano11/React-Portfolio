@@ -32,10 +32,12 @@ export const ContactPage = () => {
           <h2 className="contact-info-title">Contact Information</h2>
           <p>Email: your@email.com</p>
           <p>Phone: 123-456-7890</p>
+          <h3> Want me on your team? </h3>
           <p>
-            Want me on your team? I am available for hire in the Monmouth county
-            area and willing to relocate anywhere. I respond within 48 business
-            hours.
+            I am currently seeking opportunities in the state of New Jersey and
+            am open to relocation as needed. Additionally, I am available for
+            remote and freelance work. I ensure prompt responses within 48
+            business hours.
           </p>
           <p>Time Zone: Eastern Standard Time (EST)</p>
           <div className="social-links">

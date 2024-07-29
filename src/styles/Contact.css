@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.contact-page {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  gap: 4rem;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff8c00;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background-color: #ff8c00;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contact-info-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-info-title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ff8c00;
+}
+
+.contact-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-info p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ff8c00;
+}
+
+.contact-info a {
+  color: #ff8c00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #e67e22;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  color: #ff8c00;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.github:hover {
+  color: #6e5494;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+@media (max-width: 479px) {
+  .contact-container {
+    gap: 2rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .contact-info-title {
+    font-size: 1.6rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-container {
+    gap: 3rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .cta-button {
+    padding: 0.9rem 1.5rem;
+  }
+
+  .contact-info {
+    font-size: 1.1rem;
+  }
+
+  .contact-info-title {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .contact-title {
+    font-size: 2.4rem;
+  }
+
+  .cta-button {
+    padding: 1rem 1.8rem;
+  }
+
+  .contact-info {
+    font-size: 1.2rem;
+  }
+
+  .contact-info-title {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+  }
+}
