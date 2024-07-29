@@ -17,7 +17,7 @@ export const Hero = () => {
               cursorRenderer={(cursor) => (
                 <span className="cursor">{cursor}</span>
               )}
-              displayTextRenderer={(text) => (
+              displayTextRenderer={(text, i) => (
                 <span className="typed-text">
                   {text.split("").map((char, i) => (
                     <span
