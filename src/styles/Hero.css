@@ -91,14 +91,16 @@
 }
 
 .projects {
-  border: 2px solid #ff8c00;
+  background-color: #fff;
   color: #ff8c00;
+  border: 2px solid #ff8c00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact:hover,
 .projects:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .hero-image {
