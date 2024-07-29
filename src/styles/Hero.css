@@ -49,9 +49,11 @@
 .github:hover {
   color: #6e5494;
 }
+
 .linkedin:hover {
   color: #0077b5;
 }
+
 .twitter:hover {
   color: #1da1f2;
 }
@@ -98,41 +100,36 @@
   box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 479px) {
   .hero-container {
-    max-width: 992px;
+    max-width: 320px;
+    flex-direction: column-reverse;
+    padding: 1rem;
   }
-}
 
-@media (min-width: 767px) and (max-width: 991px) {
-  .hero-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-content {
-    margin-bottom: 2rem;
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
   .hero-image {
     margin-bottom: 2rem;
   }
+
   .name {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+
   .tagline {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
   .cta-buttons {
-    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
     justify-content: center;
   }
-  .cta-buttons a {
-    margin: 0 0.5rem;
+
+  .social-links .icon {
+    font-size: 2rem;
   }
 }
 
@@ -142,44 +139,66 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
   }
+
   .hero-image {
     margin-bottom: 2rem;
   }
+
   .name {
     font-size: 3rem;
   }
+
   .tagline {
     font-size: 2rem;
   }
+
   .bio {
     text-align: center;
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 479px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .hero-container {
-    max-width: 320px;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
   }
-  .hero-image {
-    margin-bottom: 2rem;
+
+  .hero-content {
+    margin-bottom: 0;
+    text-align: left;
   }
-  .name {
-    font-size: 2.5rem;
-  }
-  .tagline {
-    font-size: 1.5rem;
-  }
-  .cta-buttons {
-    flex-direction: column;
-    text-align: center;
-  }
+
   .social-links {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
   }
-  .social-links .icon {
-    font-size: 2rem;
+
+  .cta-buttons {
+    justify-content: flex-start;
+  }
+
+  .cta-buttons a {
+    margin: 0 1rem 0 0;
+  }
+
+  .hero-image {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
   }
 }
