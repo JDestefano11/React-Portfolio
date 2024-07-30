@@ -21,7 +21,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, staggerChildren: 0.3 },
+    transition: { duration: 0.8, staggerChildren: 0.3, delayChildren: 0.2 },
   },
 };
 
@@ -36,7 +36,7 @@ export const About = () => {
       className="about"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div className="about-container" variants={containerVariants}>
         <motion.div className="about-intro" variants={itemVariants}>
