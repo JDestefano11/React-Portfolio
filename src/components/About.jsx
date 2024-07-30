@@ -13,13 +13,33 @@ import {
   FaCloudDownloadAlt,
   FaGit,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import "../styles/About.css";
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, staggerChildren: 0.3 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 export const About = () => {
   return (
-    <section className="about">
-      <div className="about-container">
-        <div className="about-intro">
+    <motion.section
+      className="about"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <motion.div className="about-container" variants={containerVariants}>
+        <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">About Me</h2>
           <p className="description">
             Hello, and welcome to my portfolio! My name is Joe Destefano, and I
@@ -35,6 +55,8 @@ export const About = () => {
             delivering scalable and reliable solutions that exceed client
             expectations.
           </p>
+        </motion.div>
+        <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">Interests</h2>
           <p className="description">
             In my free time, I am always exploring new technologies to keep up
@@ -49,6 +71,8 @@ export const About = () => {
             continuously expanding my horizons and understanding of the world
             around me.
           </p>
+        </motion.div>
+        <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">Goals</h2>
           <p className="description">
             I am eager to join a dynamic team where I can work on innovative
@@ -62,10 +86,12 @@ export const About = () => {
             in my ability to contribute to the success of a team and make a
             meaningful impact on the projects I engage with.
           </p>
-        </div>
-        <h3 className="skills-title">Skills</h3>
-        <div className="skill-grid">
-          <div className="skill-box">
+        </motion.div>
+        <motion.h3 className="skills-title" variants={itemVariants}>
+          Skills
+        </motion.h3>
+        <motion.div className="skill-grid" variants={containerVariants}>
+          <motion.div className="skill-box" variants={itemVariants}>
             <h4>Front-end</h4>
             <ul>
               <li>
@@ -90,8 +116,8 @@ export const About = () => {
                 <FaGit /> Git
               </li>
             </ul>
-          </div>
-          <div className="skill-box">
+          </motion.div>
+          <motion.div className="skill-box" variants={itemVariants}>
             <h4>Back-end</h4>
             <ul>
               <li>
@@ -110,9 +136,9 @@ export const About = () => {
                 <FaServer /> RESTful API
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
