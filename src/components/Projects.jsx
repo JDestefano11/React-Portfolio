@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Projects.css";
+import { FaGithub } from "react-icons/fa";
 
 export const Projects = () => {
   const projects = [
@@ -10,6 +11,7 @@ export const Projects = () => {
       image: "project1.jpg",
       liveUrl: "https://project1.com",
       caseStudyUrl: "https://project1.com/case-study",
+      githubUrl: "https://github.com/your-username/project1",
     },
     {
       id: 2,
@@ -18,6 +20,7 @@ export const Projects = () => {
       image: "project2.jpg",
       liveUrl: "https://project2.com",
       caseStudyUrl: "https://project2.com/case-study",
+      githubUrl: "https://github.com/your-username/project2",
     },
     {
       id: 3,
@@ -26,6 +29,7 @@ export const Projects = () => {
       image: "project3.jpg",
       liveUrl: "https://project3.com",
       caseStudyUrl: "https://project3.com/case-study",
+      githubUrl: "https://github.com/your-username/project3",
     },
     {
       id: 4,
@@ -34,6 +38,7 @@ export const Projects = () => {
       image: "project4.jpg",
       liveUrl: "https://project4.com",
       caseStudyUrl: "https://project4.com/case-study",
+      githubUrl: "https://github.com/your-username/project4",
     },
     {
       id: 5,
@@ -42,6 +47,7 @@ export const Projects = () => {
       image: "project5.jpg",
       liveUrl: "https://project5.com",
       caseStudyUrl: "https://project5.com/case-study",
+      githubUrl: "https://github.com/your-username/project5",
     },
     {
       id: 6,
@@ -50,6 +56,7 @@ export const Projects = () => {
       image: "project6.jpg",
       liveUrl: "https://project6.com",
       caseStudyUrl: "https://project6.com/case-study",
+      githubUrl: "https://github.com/your-username/project6",
     },
   ];
 
@@ -83,6 +90,14 @@ export const Projects = () => {
                   className="project-link"
                 >
                   Case Study
+                </a>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FaGithub /> GitHub
                 </a>
               </div>
             </div>
