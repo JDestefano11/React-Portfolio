@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 import { FaGithub } from "react-icons/fa";
+import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
 
 export const Projects = () => {
   const projects = [
@@ -8,25 +9,26 @@ export const Projects = () => {
       id: 1,
       name: "Project 1",
       description: "This is a brief description of Project 1.",
-      image: "project1.jpg",
+      image: "https://placehold.co/600x400",
       liveUrl: "https://project1.com",
       caseStudyUrl: "https://project1.com/case-study",
       githubUrl: "https://github.com/your-username/project1",
     },
     {
       id: 2,
-      name: "Project 2",
-      description: "This is a brief description of Project 2.",
-      image: "project2.jpg",
-      liveUrl: "https://project2.com",
+      name: "MoviesFlix-Hub",
+      description:
+        "MoviesFlix-Hub is a React-based client-side application for movie enthusiasts. It allows users to browse, search, and manage their favorite movies, as well as update their profile information.",
+      image: movieFlixHubImage,
+      liveUrl: "https://moviesflix-hub.netlify.app/",
       caseStudyUrl: "https://project2.com/case-study",
-      githubUrl: "https://github.com/your-username/project2",
+      githubUrl: "https://github.com/JDestefano11/MoviesFlix-Hub.git",
     },
     {
       id: 3,
       name: "Project 3",
       description: "This is a brief description of Project 3.",
-      image: "project3.jpg",
+      image: "https://placehold.co/600x400",
       liveUrl: "https://project3.com",
       caseStudyUrl: "https://project3.com/case-study",
       githubUrl: "https://github.com/your-username/project3",
@@ -35,7 +37,7 @@ export const Projects = () => {
       id: 4,
       name: "Project 4",
       description: "This is a brief description of Project 4.",
-      image: "project4.jpg",
+      image: "https://placehold.co/600x400",
       liveUrl: "https://project4.com",
       caseStudyUrl: "https://project4.com/case-study",
       githubUrl: "https://github.com/your-username/project4",
@@ -44,7 +46,7 @@ export const Projects = () => {
       id: 5,
       name: "Project 5",
       description: "This is a brief description of Project 5.",
-      image: "project5.jpg",
+      image: "https://placehold.co/600x400",
       liveUrl: "https://project5.com",
       caseStudyUrl: "https://project5.com/case-study",
       githubUrl: "https://github.com/your-username/project5",
@@ -53,7 +55,7 @@ export const Projects = () => {
       id: 6,
       name: "Project 6",
       description: "This is a brief description of Project 6.",
-      image: "project6.jpg",
+      image: "https://placehold.co/600x400",
       liveUrl: "https://project6.com",
       caseStudyUrl: "https://project6.com/case-study",
       githubUrl: "https://github.com/your-username/project6",
