@@ -216,6 +216,8 @@ textarea:focus {
 @media (max-width: 479px) {
   .contact-container {
     gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .contact-title {
@@ -249,72 +251,74 @@ textarea:focus {
 @media (min-width: 480px) and (max-width: 767px) {
   .contact-container {
     gap: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .contact-title {
+      font-size: 2.2rem;
+    }
+
+    .cta-button {
+      padding: 0.9rem 1.5rem;
+    }
+
+    .contact-info {
+      font-size: 1.1rem;
+    }
+
+    .contact-info-title {
+      font-size: 1.8rem;
+    }
+
+    .icon {
+      font-size: 1.3rem;
+    }
+
+    input,
+    textarea {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
   }
 
-  .contact-title {
-    font-size: 2.2rem;
+  @media (min-width: 768px) and (max-width: 991px) {
+    .contact-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .contact-title {
+      font-size: 2.4rem;
+    }
+
+    .cta-button {
+      padding: 1rem 1.8rem;
+    }
+
+    .contact-info {
+      font-size: 1.2rem;
+    }
+
+    .contact-info-title {
+      font-size: 2rem;
+    }
+
+    .icon {
+      font-size: 1.4rem;
+    }
   }
 
-  .cta-button {
-    padding: 0.9rem 1.5rem;
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .contact-container {
+      grid-template-columns: 1fr 1fr;
+      max-width: 992px;
+    }
   }
 
-  .contact-info {
-    font-size: 1.1rem;
-  }
-
-  .contact-info-title {
-    font-size: 1.8rem;
-  }
-
-  .icon {
-    font-size: 1.3rem;
-  }
-
-  input,
-  textarea {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .contact-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  .contact-title {
-    font-size: 2.4rem;
-  }
-
-  .cta-button {
-    padding: 1rem 1.8rem;
-  }
-
-  .contact-info {
-    font-size: 1.2rem;
-  }
-
-  .contact-info-title {
-    font-size: 2rem;
-  }
-
-  .icon {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .contact-container {
-    grid-template-columns: 1fr 1fr;
-    max-width: 992px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact-container {
-    grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
+  @media (min-width: 1200px) {
+    .contact-container {
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px;
+    }
   }
 }
