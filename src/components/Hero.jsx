@@ -60,7 +60,15 @@ export const Hero = () => {
             <a href="./Contact" className="cta-button contact">
               Get in Touch
             </a>
-            <a href="./Projects" className="cta-button projects">
+            <a
+              href="./Projects"
+              className="cta-button projects"
+              style={{
+                backgroundColor: "#fff",
+                color: "#ff8c00",
+                border: "2px solid #ff8c00",
+              }}
+            >
               View Projects
             </a>
           </div>
