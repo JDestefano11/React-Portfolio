@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Projects.css";
 import { FaGithub } from "react-icons/fa";
 import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
+import { motion } from "framer-motion";
 
 export const Projects = () => {
   const projects = [
@@ -67,7 +68,24 @@ export const Projects = () => {
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project) => (
-          <div key={project.id} className="project-card">
+          <motion.div
+            key={project.id}
+            className="project-card"
+            initial={{ opacity: 0, scale: 0.8, rotateY: -30 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              rotateY: 0,
+              transition: {
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+                duration: 0.8,
+                delay: project.id * 0.1,
+              },
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <img
               src={project.image}
               alt={project.name}
@@ -103,7 +121,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
