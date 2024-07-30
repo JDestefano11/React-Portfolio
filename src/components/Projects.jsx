@@ -54,7 +54,7 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="projects">
+    <div className="projects-section">
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project) => (
@@ -64,23 +64,27 @@ export const Projects = () => {
               alt={project.name}
               className="project-image"
             />
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <div className="project-links">
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </a>
-              <a
-                href={project.caseStudyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Case Study
-              </a>
+            <div className="project-content">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <div className="project-links">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  Live Site
+                </a>
+                <a
+                  href={project.caseStudyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  Case Study
+                </a>
+              </div>
             </div>
           </div>
         ))}
