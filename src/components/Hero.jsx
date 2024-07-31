@@ -2,6 +2,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../styles/Hero.css";
+import joeImage from '../images/Joe.png';
 
 export const Hero = () => {
   return (
@@ -75,7 +76,7 @@ export const Hero = () => {
         </div>
         <div className="hero-image">
           <img
-            src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/348909787_1080813219556140_7304975076369353324_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XN9vGZfzsxEQ7kNvgEZNHPJ&_nc_ht=scontent-lga3-1.xx&oh=00_AYDR80SZZ7KWzt1n3aI4pfPPR08xRYPQI0SV8oWyQNU49w&oe=66AB024C"
+            src={joeImage}
             alt="Joe Destefano"
           />
         </div>

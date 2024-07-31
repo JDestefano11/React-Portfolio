@@ -4,6 +4,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,12 +15,14 @@
   margin: 0 auto;
   padding: 6rem 2rem;
   gap: 4rem;
+  align-items: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .name {
@@ -27,6 +30,7 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .orange-text {
@@ -38,6 +42,7 @@
   color: #ff8c00;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .bio {
@@ -45,12 +50,14 @@
   line-height: 1.6;
   margin-bottom: 2rem;
   max-width: 600px;
+  text-align: center;
 }
 
 .social-links {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .icon {
@@ -65,6 +72,7 @@
 .cta-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .cta-button {
@@ -85,8 +93,6 @@
 
 .hero-image img {
   max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 991px) {
