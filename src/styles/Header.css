@@ -25,6 +25,17 @@ header > div {
   padding: 0 1rem;
 }
 
+header nav ul li a,
+header .logo,
+header .menu-icon {
+  cursor: pointer;
+}
+
+header nav ul li a:hover,
+header .logo:hover {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: space-between;

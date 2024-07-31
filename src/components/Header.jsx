@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
 import { FaLaptopCode, FaBars, FaTimes, FaDownload } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,24 +26,39 @@ export const Header = () => {
         <nav className={isMenuOpen ? "open" : ""}>
           <ul>
             <li>
-              <a href="#home" onClick={toggleMenu}>
+              <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={toggleMenu}>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" onClick={toggleMenu}>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" onClick={toggleMenu}>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <a
