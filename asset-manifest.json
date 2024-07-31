@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c42d2766.css",
-    "main.js": "/static/js/main.f5ba843e.js",
-    "static/media/MoviesFlix-Hub.png": "/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
-    "static/media/Joe.png": "/static/media/Joe.dc5c118f0a38251e710a.png",
-    "index.html": "/index.html",
-    "main.c42d2766.css.map": "/static/css/main.c42d2766.css.map",
-    "main.f5ba843e.js.map": "/static/js/main.f5ba843e.js.map"
+    "main.css": "/React-Portfolio/static/css/main.c42d2766.css",
+    "main.js": "/React-Portfolio/static/js/main.ba9a9b73.js",
+    "static/media/MoviesFlix-Hub.png": "/React-Portfolio/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
+    "static/media/Joe.png": "/React-Portfolio/static/media/Joe.dc5c118f0a38251e710a.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.c42d2766.css.map": "/React-Portfolio/static/css/main.c42d2766.css.map",
+    "main.ba9a9b73.js.map": "/React-Portfolio/static/js/main.ba9a9b73.js.map"
   },
   "entrypoints": [
     "static/css/main.c42d2766.css",
-    "static/js/main.f5ba843e.js"
+    "static/js/main.ba9a9b73.js"
   ]
 }
