@@ -45,6 +45,18 @@
   text-decoration: underline;
 }
 
+.footer-section.links ul li a,
+.footer-section.contact .social-links a,
+.footer-section.resume .footer-resume-link {
+  cursor: pointer;
+}
+
+.footer-section.links ul li a:hover,
+.footer-section.contact .social-links a:hover,
+.footer-section.resume .footer-resume-link:hover {
+  cursor: pointer;
+}
+
 .email-container {
   display: flex;
   align-items: center;

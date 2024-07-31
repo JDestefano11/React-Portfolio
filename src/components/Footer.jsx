@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export const Footer = () => {
   return (
@@ -17,16 +18,24 @@ export const Footer = () => {
           <h2>Explore</h2>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="projects" smooth={true} duration={500}>
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
