@@ -31,11 +31,6 @@ header .menu-icon {
   cursor: pointer;
 }
 
-header nav ul li a:hover,
-header .logo:hover {
-  cursor: pointer;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -68,18 +63,33 @@ nav ul {
 }
 
 nav a {
+  position: relative;
   color: var(--text-secondary);
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  background-color: var(--secondary-bg);
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--link);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+nav a:hover,
+nav a.active {
   color: var(--link);
-  transform: translateY(-2px);
 }
 
 .menu-icon {
