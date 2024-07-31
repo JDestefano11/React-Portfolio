@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -18,22 +18,22 @@ export const Footer = () => {
           <h2>Explore</h2>
           <ul>
             <li>
-              <Link to="home" smooth={true} duration={500}>
+              <Link to="/" state={{ scrollTo: "home" }}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="about" smooth={true} duration={500}>
+              <Link to="/" state={{ scrollTo: "about" }}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="projects" smooth={true} duration={500}>
+              <Link to="/" state={{ scrollTo: "projects" }}>
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={500}>
+              <Link to="/" state={{ scrollTo: "contact" }}>
                 Contact
               </Link>
             </li>

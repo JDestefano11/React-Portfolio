@@ -3,6 +3,8 @@ import "../styles/Projects.css";
 import { FaGithub } from "react-icons/fa";
 import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { MoviesFlixCaseStudy } from "./MoviesFlixCaseStudy";
 
 export const Projects = () => {
   const projects = [
@@ -103,14 +105,18 @@ export const Projects = () => {
                 >
                   Live Site
                 </a>
-                <a
-                  href={project.caseStudyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Case Study
-                </a>
+                {project.id === 2 ? (
+                  <Link to="/moviesflix-case-study" className="project-link">
+                    Case Study
+                  </Link>
+                ) : (
+                  <Link
+                    to={`/case-study/${project.id}`}
+                    className="project-link"
+                  >
+                    Case Study
+                  </Link>
+                )}
                 <a
                   href={project.githubUrl}
                   target="_blank"

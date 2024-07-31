@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
 import { FaLaptopCode, FaBars, FaTimes, FaDownload } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,37 +26,26 @@ export const Header = () => {
         <nav className={isMenuOpen ? "open" : ""}>
           <ul>
             <li>
-              <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
+              <Link to="/" state={{ scrollTo: "home" }} onClick={toggleMenu}>
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-              >
+              <Link to="/" state={{ scrollTo: "about" }} onClick={toggleMenu}>
                 About
               </Link>
             </li>
             <li>
               <Link
-                to="projects"
-                smooth={true}
-                duration={500}
+                to="/"
+                state={{ scrollTo: "projects" }}
                 onClick={toggleMenu}
               >
                 Projects
               </Link>
             </li>
             <li>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-              >
+              <Link to="/" state={{ scrollTo: "contact" }} onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
