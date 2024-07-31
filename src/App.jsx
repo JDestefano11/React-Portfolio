@@ -5,6 +5,7 @@ import {
   Route,
   Routes,
   useLocation,
+  Navigate
 } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import { Header } from "./components/Header";
@@ -56,13 +57,13 @@ const AppContent = () => {
             path="/moviesflix-case-study"
             element={<MoviesFlixCaseStudy />}
           />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
     </div>
   );
 };
-
 export const App = () => {
   return (
     <Router>
