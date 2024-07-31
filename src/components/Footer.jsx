@@ -1,15 +1,9 @@
 import React from "react";
 import "../styles/Footer.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -24,16 +18,16 @@ export const Footer = () => {
           <h2>Explore</h2>
           <ul>
             <li>
-              <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
+              <Link to="/" state={{ scrollTo: 'home' }}>Home</Link>
             </li>
             <li>
-              <a href="#about" onClick={() => scrollToSection('about')}>About</a>
+              <Link to="/" state={{ scrollTo: 'about' }}>About</Link>
             </li>
             <li>
-              <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
+              <Link to="/" state={{ scrollTo: 'projects' }}>Projects</Link>
             </li>
             <li>
-              <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
+              <Link to="/" state={{ scrollTo: 'contact' }}>Contact</Link>
             </li>
           </ul>
         </div>
