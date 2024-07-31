@@ -1,11 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useLocation,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import { Header } from "./components/Header";
@@ -64,6 +64,7 @@ const AppContent = () => {
     </div>
   );
 };
+
 export const App = () => {
   return (
     <Router>
