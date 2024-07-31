@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.c42d2766.css",
+    "main.js": "/React-Portfolio/static/js/main.ba9a9b73.js",
+    "static/media/MoviesFlix-Hub.png": "/React-Portfolio/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
+    "static/media/Joe.png": "/React-Portfolio/static/media/Joe.dc5c118f0a38251e710a.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.c42d2766.css.map": "/React-Portfolio/static/css/main.c42d2766.css.map",
+    "main.ba9a9b73.js.map": "/React-Portfolio/static/js/main.ba9a9b73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c42d2766.css",
+    "static/js/main.ba9a9b73.js"
+  ]
+}
