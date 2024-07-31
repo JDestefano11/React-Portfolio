@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../styles/MoviesFlixCaseStudy.css";
@@ -22,6 +22,10 @@ const itemVariants = {
 };
 
 export const MoviesFlixCaseStudy = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <motion.div
             className="case-study"
