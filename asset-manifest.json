@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.7306a450.css",
+    "main.css": "/React-Portfolio/static/css/main.59cb929f.css",
     "main.js": "/React-Portfolio/static/js/main.f5edb4d2.js",
     "static/media/MoviesFlix-Hub.png": "/React-Portfolio/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
     "static/media/Joe.png": "/React-Portfolio/static/media/Joe.dc5c118f0a38251e710a.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.7306a450.css.map": "/React-Portfolio/static/css/main.7306a450.css.map",
+    "main.59cb929f.css.map": "/React-Portfolio/static/css/main.59cb929f.css.map",
     "main.f5edb4d2.js.map": "/React-Portfolio/static/js/main.f5edb4d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7306a450.css",
+    "static/css/main.59cb929f.css",
     "static/js/main.f5edb4d2.js"
   ]
 }
