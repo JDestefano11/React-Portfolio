@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   HashRouter as Router,
   Route,
@@ -15,6 +14,7 @@ import { ContactPage } from "./components/Contact";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import { MoviesFlixCaseStudy } from "./components/MoviesFlixCaseStudy";
+import { MeetAppCaseStudy } from "./components/Meet-AppCaseStudy";
 
 const AppContent = () => {
   const location = useLocation();
@@ -57,6 +57,7 @@ const AppContent = () => {
             path="/moviesflix-case-study"
             element={<MoviesFlixCaseStudy />}
           />
+          <Route path="/meetapp-case-study" element={<MeetAppCaseStudy />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

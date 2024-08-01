@@ -4,7 +4,6 @@ import { FaGithub } from "react-icons/fa";
 import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MoviesFlixCaseStudy } from "./MoviesFlixCaseStudy";
 
 export const Projects = () => {
   const projects = [
@@ -30,11 +29,12 @@ export const Projects = () => {
     {
       id: 3,
       name: "Project 3",
-      description: "This is a brief description of Project 3.",
+      description:
+        "The Meet App is a web application designed to help users discover and  keep track of upcoming events. The app provides various features to enhance the user experience, such as filtering events by city, showing/hiding event details, specifying the number of events to display, offline usage capabilities, adding the app as a shortcut to the  home screen, and displaying charts to visualize event details.",
       image: "https://placehold.co/600x400",
-      liveUrl: "https://project3.com",
-      caseStudyUrl: "https://project3.com/case-study",
-      githubUrl: "https://github.com/your-username/project3",
+      liveUrl: "https://jdestefano11.github.io/meet-app/",
+      caseStudyUrl: "https://project3.com/meetapp-case-study",
+      githubUrl: "https://github.com/JDestefano11/meet-app",
     },
     {
       id: 4,
@@ -107,6 +107,10 @@ export const Projects = () => {
                 </a>
                 {project.id === 2 ? (
                   <Link to="/moviesflix-case-study" className="project-link">
+                    Case Study
+                  </Link>
+                ) : project.id === 3 ? (
+                  <Link to="/meetapp-case-study" className="project-link">
                     Case Study
                   </Link>
                 ) : (
