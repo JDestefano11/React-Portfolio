@@ -2,7 +2,8 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../styles/Hero.css";
-import joeImage from '../images/Joe.png';
+import joeImage from "../images/Joe.png";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -44,17 +45,32 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="icon github" />
+              <motion.div
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaGithub className="icon github" />
+              </motion.div>
             </a>
             <a
               href="https://www.linkedin.com/in/joseph-destefano-7a1b21283"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="icon linkedin" />
+              <motion.div
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaLinkedin className="icon linkedin" />
+              </motion.div>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="icon twitter" />
+              <motion.div
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaTwitter className="icon twitter" />
+              </motion.div>
             </a>
           </div>
           <div className="cta-buttons">
@@ -75,10 +91,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img
-            src={joeImage}
-            alt="Joe Destefano"
-          />
+          <img src={joeImage} alt="Joe Destefano" />
         </div>
       </div>
     </section>
