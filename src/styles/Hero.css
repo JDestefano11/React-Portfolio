@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.hero {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.orange-text {
+  color: #ff8c00;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  color: #ff8c00;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-container {
+    padding: 4rem 1.5rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .name {
+    font-size: 1.8rem;
+  }
+}
