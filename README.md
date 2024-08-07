@@ -1,6 +1,34 @@
-# Portfolio React Project
+# Joe Destefano's Portfolio React Project
 
-This project is a personal portfolio website built with React, showcasing your skills, projects, and experience.
+This project is a personal portfolio website built with React, showcasing my skills, projects, and experience as a Web Developer.
+
+## Features
+
+- Responsive design for optimal viewing on various devices
+- Interactive project showcase highlighting your work
+- Comprehensive skills section
+- User-friendly contact form for easy communication
+- Dynamic home section with engaging content
+- Detailed about section providing background information
+- Smooth scrolling navigation for seamless user experience
+- Downloadable resume for potential employers
+- Integrated social media links (GitHub, LinkedIn, Twitter)
+- Real-time copyright year update
+- Direct email contact option
+- Animated components enhancing visual appeal
+- Dynamic typing effect for added interactivity
+
+
+## Technologies Used
+
+- React (v18.3.1)
+- React Router (v6.25.1) for navigation
+- React Icons (v5.2.1) for social media and UI icons
+- Framer Motion (v11.3.19) for animations
+- React Scroll (v1.9.0) for smooth scrolling
+- React Typing Effect (v2.0.5) for dynamic text animations
+- Jest and React Testing Library for unit and integration testing
+- Web Vitals for performance monitoring
 
 ## Getting Started
 
@@ -33,12 +61,10 @@ Launches the test runner in interactive watch mode.
 
 Builds the app for production to the `build` folder, optimizing for best performance.
 
-## Features
+## Project Structure
 
-- Responsive design
-- Project showcase
-- Skills section
-- Contact form
+- `src/components`: Contains React components including Footer.jsx
+- `src/styles`: Contains CSS files for styling
 
 ## Learn More
 
@@ -61,4 +87,8 @@ If you encounter issues with `npm run build` failing to minify, check [this sect
 
 ## Contact
 
-Joe Destefano - destefanoj11@gmail.com
+- Joe Destefano
+- Email: joedestefano.webdev@gmail.com
+- GitHub: [JDestefano11](https://github.com/JDestefano11)
+- LinkedIn: [Joe Destefano](https://www.linkedin.com/in/joeadestefano/)
+
