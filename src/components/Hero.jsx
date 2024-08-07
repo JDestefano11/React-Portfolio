@@ -3,7 +3,6 @@ import ReactTypingEffect from "react-typing-effect";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../styles/Hero.css";
 import joeImage from "../images/Joe.png";
-import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -24,7 +23,14 @@ export const Hero = () => {
                   {text.split("").map((char, i) => (
                     <span
                       key={i}
-                      className={i < 3 ? "white-text" : "orange-text"}
+                      className={
+                        i < 3
+                          ? "primary-text"
+                          : i < 6
+                          ? "secondary-text"
+                          : "accent-text"
+                      }
+                      style={{ transition: "color 0.3s ease" }}
                     >
                       {char}
                     </span>
@@ -45,45 +51,46 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <motion.div
-                whileHover={{ scale: 1.2, rotate: 360 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaGithub className="icon github" />
-              </motion.div>
+              <FaGithub className="icon github" style={{ color: "#39FF14" }} />
             </a>
             <a
               href="https://www.linkedin.com/in/joseph-destefano-7a1b21283"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <motion.div
-                whileHover={{ scale: 1.2, rotate: 360 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaLinkedin className="icon linkedin" />
-              </motion.div>
+              <FaLinkedin
+                className="icon linkedin"
+                style={{ color: "#39FF14" }}
+              />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <motion.div
-                whileHover={{ scale: 1.2, rotate: 360 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaTwitter className="icon twitter" />
-              </motion.div>
+              <FaTwitter
+                className="icon twitter"
+                style={{ color: "#39FF14" }}
+              />
             </a>
           </div>
+
           <div className="cta-buttons">
-            <a href="./Contact" className="cta-button contact">
+            <a
+              href="./Contact"
+              className="cta-button contact"
+              style={{
+                backgroundColor: "#39FF14",
+                color: "#2B2B2B",
+                border: "2px solid #00FFFF",
+                boxShadow: "0 0 15px rgba(57, 255, 20, 0.7)",
+              }}
+            >
               Get in Touch
             </a>
             <a
               href="./Projects"
               className="cta-button projects"
               style={{
-                backgroundColor: "#fff",
-                color: "#ff8c00",
-                border: "2px solid #ff8c00",
+                backgroundColor: "#2B2B2B",
+                color: "#39FF14",
+                border: "2px solid #00FFFF",
               }}
             >
               View Projects

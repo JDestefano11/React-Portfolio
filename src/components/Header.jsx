@@ -24,7 +24,7 @@ export const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <FaLaptopCode className="icon" />
+          <FaLaptopCode className="icon" style={{ color: "#39FF14" }} />
           <h1>Portfolio</h1>
         </div>
         <div
