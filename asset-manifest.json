@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.389ded8d.css",
+    "main.css": "/React-Portfolio/static/css/main.b6337cb4.css",
     "main.js": "/React-Portfolio/static/js/main.27ab22ba.js",
     "static/media/MoviesFlix-Hub.png": "/React-Portfolio/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
     "static/media/Joe.png": "/React-Portfolio/static/media/Joe.dc5c118f0a38251e710a.png",
@@ -9,11 +9,11 @@
     "static/media/MeetAppCaseStudy.png": "/React-Portfolio/static/media/MeetAppCaseStudy.86bba63593f41410b498.png",
     "static/media/Coding.jpg": "/React-Portfolio/static/media/Coding.d21cef334d2dffdae3a8.jpg",
     "index.html": "/React-Portfolio/index.html",
-    "main.389ded8d.css.map": "/React-Portfolio/static/css/main.389ded8d.css.map",
+    "main.b6337cb4.css.map": "/React-Portfolio/static/css/main.b6337cb4.css.map",
     "main.27ab22ba.js.map": "/React-Portfolio/static/js/main.27ab22ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.389ded8d.css",
+    "static/css/main.b6337cb4.css",
     "static/js/main.27ab22ba.js"
   ]
 }
