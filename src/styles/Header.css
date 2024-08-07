@@ -121,6 +121,7 @@ nav a.active {
     z-index: 999;
     justify-content: center;
     border-radius: 8px;
+    width: 100vw;
   }
 
   nav.open {
@@ -167,7 +168,7 @@ nav a.active {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 100vw;
     max-width: 600px;
     background-color: var(--primary-bg);
     display: none;
