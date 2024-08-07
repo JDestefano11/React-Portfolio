@@ -67,7 +67,7 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="projects-section">
+    <div id="projects" className="projects-section">
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project) => (

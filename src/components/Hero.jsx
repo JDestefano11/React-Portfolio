@@ -5,6 +5,14 @@ import "../styles/Hero.css";
 import joeImage from "../images/Joe.png";
 
 export const Hero = () => {
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -54,7 +62,7 @@ export const Hero = () => {
               <FaGithub className="icon github" style={{ color: "#39FF14" }} />
             </a>
             <a
-              href="https://www.linkedin.com/in/joseph-destefano-7a1b21283"
+              href="https://www.linkedin.com/in/joeadestefano/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,8 +81,9 @@ export const Hero = () => {
 
           <div className="cta-buttons">
             <a
-              href="./Contact"
+              href="#contact"
               className="cta-button contact"
+              onClick={(e) => handleSmoothScroll(e, "contact")}
               style={{
                 backgroundColor: "#39FF14",
                 color: "#2B2B2B",
@@ -85,8 +94,9 @@ export const Hero = () => {
               Get in Touch
             </a>
             <a
-              href="./Projects"
+              href="#projects"
               className="cta-button projects"
+              onClick={(e) => handleSmoothScroll(e, "projects")}
               style={{
                 backgroundColor: "#2B2B2B",
                 color: "#39FF14",

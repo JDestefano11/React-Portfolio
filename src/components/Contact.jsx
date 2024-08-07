@@ -36,7 +36,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div ref={ref} className="contact-page">
+    <div id="contact" ref={ref} className="contact-page">
       <div className="contact-container">
         <div className="contact-info">
           {[
