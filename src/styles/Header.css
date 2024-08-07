@@ -1,19 +1,19 @@
 :root {
-  --primary-bg: #1e1e1e;
-  --secondary-bg: #2c2c2c;
-  --accent: #0d6efd;
-  --text-primary: #f1f1f1;
-  --text-secondary: #b0b0b0;
-  --button-bg: #17a2b8;
-  --button-hover: #138496;
-  --border: #3d3d3d;
-  --link: #ff8c00;
+  --primary-bg: #2b2b2b;
+  --secondary-bg: #1a1a2e;
+  --accent: #00ffff;
+  --text-primary: #e6e6fa;
+  --text-secondary: #b8b8d1;
+  --button-bg: #39ff14;
+  --button-hover: #00ffff;
+  --border: #2d2d44;
+  --link: #39ff14;
 }
 
 header {
   background-color: var(--primary-bg);
   padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
   position: relative;
 }
 
@@ -43,13 +43,13 @@ header .menu-icon {
 
 .logo h1 {
   font-size: 1.5rem;
-  color: var(--text-primary);
+  color: var(--accent);
   margin: 0;
 }
 
 .icon {
   font-size: 1.8rem;
-  color: var(--link);
+  color: #39ff14;
 }
 
 nav ul {
@@ -75,7 +75,7 @@ nav a::after {
   height: 2px;
   bottom: -2px;
   left: 50%;
-  background-color: var(--link);
+  background-color: var(--accent);
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -87,14 +87,14 @@ nav a.active::after {
 
 nav a:hover,
 nav a.active {
-  color: var(--link);
+  color: var(--accent);
 }
 
 .menu-icon {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text-primary);
+  color: var(--accent);
   z-index: 1001;
 }
 

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 .hero {
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-  color: #fff;
+  background: linear-gradient(135deg, #2b2b2b, #1a1a2e, #00ffff);
+  color: #e6e6fa;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -20,6 +20,18 @@
   align-items: center;
 }
 
+.typed-text .primary-text {
+  color: #39ff14;
+}
+
+.typed-text .secondary-text {
+  color: #e6e6fa;
+}
+
+.typed-text .accent-text {
+  color: #00ffff;
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -33,15 +45,18 @@
   margin-bottom: 0.5rem;
   letter-spacing: 0.05em;
   text-align: center;
+  color: #e6e6fa;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-.orange-text {
-  color: #ff8c00;
+.highlight-text {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
 }
 
 .tagline {
   font-size: 1.8rem;
-  color: #ff8c00;
+  color: #00ffff;
   margin-bottom: 1.5rem;
   font-weight: 500;
   text-align: center;
@@ -53,6 +68,7 @@
   margin-bottom: 2rem;
   max-width: 600px;
   text-align: center;
+  color: #b8b8d1;
 }
 
 .social-links {
@@ -65,10 +81,12 @@
 .icon {
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.2s ease;
+  color: #39ff14;
 }
 
 .icon:hover {
   transform: scale(1.1);
+  color: #00ffff;
 }
 
 .cta-buttons {
@@ -85,6 +103,14 @@
   font-size: 1rem;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
+  background-color: #00ffff;
+  color: #2b2b2b;
+}
+
+.cta-button:hover {
+  background-color: #39ff14;
+  color: #2b2b2b;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
 }
 
 .hero-image {
