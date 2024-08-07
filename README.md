@@ -2,10 +2,6 @@
 
 This project is a personal portfolio website built with React, showcasing my skills, projects, and experience as a Web Developer.
 
-# Joe Destefano's Portfolio React Project
-
-This project is a personal portfolio website built with React, showcasing my skills, projects, and experience as a Web Developer.
-
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
