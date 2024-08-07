@@ -18,16 +18,24 @@ export const Footer = () => {
           <h2>Explore</h2>
           <ul>
             <li>
-              <Link to="/" state={{ scrollTo: 'home' }}>Home</Link>
+              <Link to="/" state={{ scrollTo: "home" }}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/" state={{ scrollTo: 'about' }}>About</Link>
+              <Link to="/" state={{ scrollTo: "about" }}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/" state={{ scrollTo: 'projects' }}>Projects</Link>
+              <Link to="/" state={{ scrollTo: "projects" }}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/" state={{ scrollTo: 'contact' }}>Contact</Link>
+              <Link to="/" state={{ scrollTo: "contact" }}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -35,7 +43,7 @@ export const Footer = () => {
           <h2>Get in Touch</h2>
           <p className="email-container">
             <FaEnvelope className="email-icon" />
-            <span className="email">joe@example.com</span>
+            <span className="email">joedestefano.webdev@gmail.com</span>
           </p>
           <div className="social-links">
             <a

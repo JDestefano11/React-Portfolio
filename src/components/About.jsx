@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaReact,
   FaAngular,
@@ -13,22 +14,21 @@ import {
   FaCloudDownloadAlt,
   FaGit,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
 import "../styles/About.css";
 import Joe from "../images/JoePic.png";
 import Code from "../images/Coding.jpg";
+
 const containerVariants = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, staggerChildren: 0.3, delayChildren: 0.2 },
+    transition: { staggerChildren: 0.2, delayChildren: 0.3 },
   },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 export const About = () => {
@@ -37,9 +37,10 @@ export const About = () => {
       className="about"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
+      variants={containerVariants}
     >
-      <motion.div className="about-container" variants={containerVariants}>
+      <div className="about-container">
         <motion.div className="about-intro" variants={itemVariants}>
           <img src={Joe} alt="Joe Destefano" />
           <h2 className="section-title">About Me</h2>
@@ -58,6 +59,7 @@ export const About = () => {
             expectations.
           </p>
         </motion.div>
+
         <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">Interests</h2>
           <p className="description">
@@ -74,6 +76,7 @@ export const About = () => {
             around me.
           </p>
         </motion.div>
+
         <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">Goals</h2>
           <div className="goals-content">
@@ -89,9 +92,15 @@ export const About = () => {
               confident in my ability to contribute to the success of a team and
               make a meaningful impact on the projects I engage with.
             </p>
-            <img src={Code} alt="Coding Setup" className="full-screen-image" />
+            <motion.img
+              src={Code}
+              alt="Coding Setup"
+              className="full-screen-image"
+              variants={itemVariants}
+            />
           </div>
         </motion.div>
+
         <motion.h3 className="skills-title" variants={itemVariants}>
           Skills
         </motion.h3>
@@ -99,51 +108,39 @@ export const About = () => {
           <motion.div className="skill-box" variants={itemVariants}>
             <h4>Front-end</h4>
             <ul>
-              <li>
-                <FaReact /> React
-              </li>
-              <li>
-                <FaAngular /> Angular
-              </li>
-              <li>
-                <FaJs /> JavaScript
-              </li>
-              <li>
-                <FaHtml5 /> HTML/CSS
-              </li>
-              <li>
-                <FaDesktop /> Responsive Design
-              </li>
-              <li>
-                <FaCloudDownloadAlt /> API Integration
-              </li>
-              <li>
-                <FaGit /> Git
-              </li>
+              {[
+                { icon: FaReact, text: "React" },
+                { icon: FaAngular, text: "Angular" },
+                { icon: FaJs, text: "JavaScript" },
+                { icon: FaHtml5, text: "HTML/CSS" },
+                { icon: FaDesktop, text: "Responsive Design" },
+                { icon: FaCloudDownloadAlt, text: "API Integration" },
+                { icon: FaGit, text: "Git" },
+              ].map((skill, index) => (
+                <motion.li key={index} variants={itemVariants}>
+                  <skill.icon /> {skill.text}
+                </motion.li>
+              ))}
             </ul>
           </motion.div>
           <motion.div className="skill-box" variants={itemVariants}>
             <h4>Back-end</h4>
             <ul>
-              <li>
-                <FaNodeJs /> Node.js
-              </li>
-              <li>
-                <FaDatabase /> MongoDB
-              </li>
-              <li>
-                <FaGitAlt /> Git
-              </li>
-              <li>
-                <FaAws /> AWS
-              </li>
-              <li>
-                <FaServer /> RESTful API
-              </li>
+              {[
+                { icon: FaNodeJs, text: "Node.js" },
+                { icon: FaDatabase, text: "MongoDB" },
+                { icon: FaGitAlt, text: "Git" },
+                { icon: FaAws, text: "AWS" },
+                { icon: FaServer, text: "RESTful API" },
+              ].map((skill, index) => (
+                <motion.li key={index} variants={itemVariants}>
+                  <skill.icon /> {skill.text}
+                </motion.li>
+              ))}
             </ul>
           </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 };

@@ -41,8 +41,8 @@ export const ContactPage = () => {
         <div className="contact-info">
           {[
             "Contact Information",
-            "Email: your@email.com",
-            "Phone: 123-456-7890",
+            "Email: joedestefano.webdev@gmail.com",
+            "Phone: 732-865-6856",
             "Want me on your team?",
           ].map((text, index) => (
             <motion.div
