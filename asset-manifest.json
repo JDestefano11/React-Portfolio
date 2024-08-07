@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.0e533182.css",
-    "main.js": "/React-Portfolio/static/js/main.90ec6d12.js",
+    "main.css": "/React-Portfolio/static/css/main.49769365.css",
+    "main.js": "/React-Portfolio/static/js/main.2e1b1280.js",
     "static/media/MoviesFlix-Hub.png": "/React-Portfolio/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
     "static/media/Joe.png": "/React-Portfolio/static/media/Joe.dc5c118f0a38251e710a.png",
     "static/media/MeetAppCaseStudy.png": "/React-Portfolio/static/media/MeetAppCaseStudy.86bba63593f41410b498.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.0e533182.css.map": "/React-Portfolio/static/css/main.0e533182.css.map",
-    "main.90ec6d12.js.map": "/React-Portfolio/static/js/main.90ec6d12.js.map"
+    "main.49769365.css.map": "/React-Portfolio/static/css/main.49769365.css.map",
+    "main.2e1b1280.js.map": "/React-Portfolio/static/js/main.2e1b1280.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e533182.css",
-    "static/js/main.90ec6d12.js"
+    "static/css/main.49769365.css",
+    "static/js/main.2e1b1280.js"
   ]
 }
