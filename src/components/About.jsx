@@ -15,7 +15,8 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "../styles/About.css";
-
+import Joe from "../images/JoePic.png";
+import Code from "../images/Coding.jpg";
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -40,6 +41,7 @@ export const About = () => {
     >
       <motion.div className="about-container" variants={containerVariants}>
         <motion.div className="about-intro" variants={itemVariants}>
+          <img src={Joe} alt="Joe Destefano" />
           <h2 className="section-title">About Me</h2>
           <p className="description">
             Hello, and welcome to my portfolio! My name is Joe Destefano, and I
@@ -74,18 +76,21 @@ export const About = () => {
         </motion.div>
         <motion.div className="about-intro" variants={itemVariants}>
           <h2 className="section-title">Goals</h2>
-          <p className="description">
-            I am eager to join a dynamic team where I can work on innovative
-            projects and further develop my skills as a developer. My primary
-            goal is to leverage my expertise in technology to create impactful
-            solutions that make a difference. I am committed to continuously
-            learning and adapting to new challenges in the ever-evolving tech
-            industry. Moreover, I firmly believe in fostering a collaborative
-            and inclusive work environment where diverse perspectives are valued
-            and creativity can thrive. By achieving these goals, I am confident
-            in my ability to contribute to the success of a team and make a
-            meaningful impact on the projects I engage with.
-          </p>
+          <div className="goals-content">
+            <p className="description">
+              I am eager to join a dynamic team where I can work on innovative
+              projects and further develop my skills as a developer. My primary
+              goal is to leverage my expertise in technology to create impactful
+              solutions that make a difference. I am committed to continuously
+              learning and adapting to new challenges in the ever-evolving tech
+              industry. Moreover, I firmly believe in fostering a collaborative
+              and inclusive work environment where diverse perspectives are
+              valued and creativity can thrive. By achieving these goals, I am
+              confident in my ability to contribute to the success of a team and
+              make a meaningful impact on the projects I engage with.
+            </p>
+            <img src={Code} alt="Coding Setup" className="full-screen-image" />
+          </div>
         </motion.div>
         <motion.h3 className="skills-title" variants={itemVariants}>
           Skills
