@@ -73,12 +73,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-section resume">
-          <a
-            href="/Offical Resume.pdf"
-            download
-            className="footer-resume-link"
-            aria-label="Download Resume"
-          >
+          <a href="/Offical Resume.pdf" download>
             Download Resume
           </a>
         </div>
