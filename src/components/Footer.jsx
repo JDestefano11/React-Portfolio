@@ -73,7 +73,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-section resume">
-          <a href="/Joe-Destefano-Resume.pdf" download>
+          <a href="/Joe-Destefano-Resume.docx" download>
             Download Resume
           </a>
         </div>
