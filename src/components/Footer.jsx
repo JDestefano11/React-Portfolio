@@ -74,7 +74,7 @@ export const Footer = () => {
         </div>
         <div className="footer-section resume">
           <a
-            href="../../public/Joe-Destefano-Resume.pdf"
+            href={`${process.env.PUBLIC_URL}/Joe-Destefano-Resume.pdf`}
             download="Joe_Destefano_Resume.pdf"
           >
             Download Resume
