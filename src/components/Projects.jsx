@@ -3,6 +3,8 @@ import "../styles/Projects.css";
 import { FaGithub } from "react-icons/fa";
 import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
 import meetAppImage from "../images/MeetAppCaseStudy.png";
+import movie from "../images/453321966_511122678039876_4012628457751247270_n.png";
+import chat from "../images/Chatapp.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -10,26 +12,17 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
-      description: "This is a brief description of Project 1.",
-      image: "https://placehold.co/600x400",
-      liveUrl: "https://project1.com",
-      caseStudyUrl: "https://project1.com/case-study",
-      githubUrl: "https://github.com/your-username/project1",
-    },
-    {
-      id: 2,
       name: "MoviesFlix-Hub",
       description:
-        "MoviesFlix-Hub is a React-based client-side application for movie enthusiasts. It allows users to browse, search, and manage their favorite movies, as well as update their profile information.",
+        "MoviesFlix-Hub is a React-based client-side application designed for movie enthusiasts. It offers a dynamic and user-friendly interface where users can browse and search for movies, view detailed information, and manage their favorite films. The application also includes features for updating user profiles, such as changing personal details and managing favorite movie lists. With a focus on seamless user experience and responsive design, MoviesFlix-Hub provides an engaging platform for discovering and organizing movie content.",
       image: movieFlixHubImage,
       liveUrl: "https://moviesflix-hub.netlify.app/",
       caseStudyUrl: "https://project2.com/case-study",
       githubUrl: "https://github.com/JDestefano11/MoviesFlix-Hub.git",
     },
     {
-      id: 3,
-      name: "Project 3",
+      id: 2,
+      name: "Meet-App",
       description:
         "The Meet App is a web application designed to help users discover and  keep track of upcoming events. The app provides various features to enhance the user experience, such as filtering events by city, showing/hiding event details, specifying the number of events to display, offline usage capabilities, adding the app as a shortcut to the  home screen, and displaying charts to visualize event details.",
       image: meetAppImage,
@@ -38,13 +31,24 @@ export const Projects = () => {
       githubUrl: "https://github.com/JDestefano11/meet-app",
     },
     {
+      id: 3,
+      name: "MoviesFlix-Hub Api",
+      description:
+        "A robust backend API for managing movie-related data, built with Node.js and Express. It supports user authentication, movie management, and user favorites, utilizing JWT for secure access and MongoDB for data storage. Key features include user registration, movie retrieval, and dynamic endpoints for genres and directors. Designed with CORS and Passport for secure and flexible API access.",
+      image: movie,
+      liveUrl: "https://project1.com",
+      caseStudyUrl: "https://project1.com/case-study",
+      githubUrl: "https://github.com/JDestefano11/MoviesFlix-hub-api.git",
+    },
+    {
       id: 4,
-      name: "Project 4",
-      description: "This is a brief description of Project 4.",
-      image: "https://placehold.co/600x400",
+      name: "Chat App",
+      description:
+        "A mobile chat application developed with React Native, leveraging Firebase for real-time data synchronization and user authentication. This app allows users to create accounts, join chat rooms, and send instant messages. Firebase handles user authentication, message storage, and real-time updates, ensuring seamless communication. The application features a clean, intuitive interface and robust performance on both iOS and Android platforms, providing users with a reliable and engaging messaging experience.",
+      image: chat,
       liveUrl: "https://project4.com",
       caseStudyUrl: "https://project4.com/case-study",
-      githubUrl: "https://github.com/your-username/project4",
+      githubUrl: "https://github.com/JDestefano11/Chat.git",
     },
     {
       id: 5,
