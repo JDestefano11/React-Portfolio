@@ -73,12 +73,17 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-section resume">
-          <a
-            href={`${process.env.PUBLIC_URL}/Joe-Destefano-Resume.pdf`}
-            download="Joe_Destefano_Resume.pdf"
+          <button
+            onClick={() =>
+              window.open(
+                `${process.env.PUBLIC_URL}/Joe-Destefano-Resume.pdf`,
+                "_blank"
+              )
+            }
+            className="resume-button"
           >
             Download Resume
-          </a>
+          </button>
         </div>
       </div>
     </footer>
