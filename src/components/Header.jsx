@@ -50,7 +50,7 @@ export const Header = () => {
             <li>
               <a
                 href="/Offical Resume.pdf"
-                download="Joe_Destefano_Resume.pdf"
+                download="../../Offical Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume-link"
