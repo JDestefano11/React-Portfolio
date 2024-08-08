@@ -48,7 +48,7 @@ export const Header = () => {
               </li>
             ))}
             <li>
-              <a href="/Offical Resume.pdf" download>
+              <a href="/Joe-Destefano-Resume.pdf" download>
                 Download Resume
               </a>
             </li>
