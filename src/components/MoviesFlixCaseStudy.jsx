@@ -28,33 +28,35 @@ export const MoviesFlixCaseStudy = () => {
 
     return (
         <motion.div
-            className="case-study"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+          className="case-study"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
-            <motion.header
-                initial={{ opacity: 0, y: -50 }}
+          <motion.header
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="header-content">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 }}
-                >
-                    MoviesFlix-Hub
-                </motion.h1>
-                <motion.p
-                    className="tagline"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7 }}
-                >
-                    Explore. Discover. Enjoy.
-                </motion.p>
-            </motion.header>
-
+                transition={{ delay: 0.5 }}
+              >
+                MoviesFlix-Hub
+              </motion.h1>
+              <motion.p
+                className="tagline"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+              >
+                Explore. Discover. Enjoy.
+              </motion.p>
+            </div>
+          </motion.header>
+      
             <motion.main
                 variants={containerVariants}
                 initial="hidden"
