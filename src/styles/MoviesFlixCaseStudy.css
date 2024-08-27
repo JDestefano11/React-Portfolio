@@ -3,7 +3,7 @@
 .case-study {
   padding: 2rem;
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-  color: #fff;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,13 +14,17 @@
 
 .case-study h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  color: #ff8c00;
 }
 
 .case-study h2 {
   position: relative;
   padding-bottom: 10px;
+  font-weight: 700;
+  color: #ff8c00;
 }
+
 .case-study h2::after {
   content: "";
   position: absolute;
@@ -31,9 +35,15 @@
   background-color: #ff8c00;
 }
 
+.case-study h3 {
+  font-weight: 600;
+  color: #ff8c00;
+}
+
 .case-study .tagline {
   font-size: 1.5rem;
   color: #ff8c00;
+  margin: 0;
 }
 
 .animated-section {
@@ -49,6 +59,8 @@
 .animated-section p {
   font-size: 1.1rem;
   line-height: 1.6;
+  color: #e6e6fa;
+  font-weight: 400;
 }
 
 .tech-icons {
@@ -60,7 +72,7 @@
 }
 
 .tech-icons li {
-  background: #2a2a2a;
+  background: rgba(42, 42, 42, 0.7);
   padding: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -80,7 +92,7 @@
 }
 
 .feature-box {
-  background: #2a2a2a;
+  background: rgba(42, 42, 42, 0.7);
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -130,12 +142,39 @@
   border-radius: 30px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
 }
 
 .back-link:hover {
   background-color: #e67e00;
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+strong {
+  font-weight: 700;
+  color: #ff8c00;
+}
+
+#overview, #challenge, #results {
+  text-align: center;
+}
+
+#overview p, #challenge p, #results p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#overview {
+  margin-top: 4rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 479px) {
@@ -178,6 +217,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  #overview {
+    margin-top: 4rem;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -213,24 +256,11 @@
     flex-basis: 45%;
     margin-bottom: 1rem;
   }
+
+  #overview {
+    margin-top: 5rem;
+  }
 }
-
-#overview, #challenge, #results {
-  text-align: center;
-}
-
-#overview p, #challenge p, #results p {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#overview {
-  margin-top: 4rem;
-}
-
-
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .case-study {
@@ -263,15 +293,18 @@
     justify-content: center;
     gap: 1.5rem;
   }
+
   .case-study h1,
   .case-study h2,
   .case-study h3 {
     text-align: center;
   }
+
   .back-link {
     display: block;
     text-align: center;
   }
+
   #overview {
     margin-top: 4rem;
   }
@@ -281,63 +314,77 @@
   .case-study {
     padding: 4rem;
   }
+
   .process-container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+
   .process-step {
     flex-basis: auto;
     width: 18%;
   }
+
   #process h2 {
     text-align: center;
   }
+
   .back-link {
     display: block;
     text-align: center;
   }
+
   #solution h2,
   #features h2 {
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  #overview {
+    margin-top: 3.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .case-study {
-    padding: 5rem;
+    padding: 4rem;
   }
+
   .case-study h1 {
     font-size: 3.5rem;
   }
+
   .animated-section h2 {
     font-size: 2.5rem;
   }
-  .case-study {
-    padding: 4rem;
-  }
+
   .process-container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+
   .process-step {
     flex-basis: auto;
     width: 18%;
   }
+
   #process h2 {
     text-align: center;
   }
+
   .back-link {
     display: block;
     text-align: center;
   }
+
   #solution h2,
   #features h2 {
     text-align: center;
     margin-bottom: 1rem;
   }
+
   .tech-icons {
     list-style: none;
     padding: 0;
@@ -348,45 +395,3 @@
   }
 }
 
-#overview {
-  margin-top: 4rem;
-}
-
-@media (max-width: 991px) {
-  #overview {
-    margin-top: 3.5rem;
-  }
-}
-
-@media (max-width: 767px) {
-  #overview {
-    margin-top: 5rem;
-  }
-}
-
-@media (max-width: 479px) {
-  #overview {
-    margin-top: 4rem;
-  }
-}
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.case-study h1 {
-  margin-bottom: 0;
-}
-
-.case-study .tagline {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-  }
-}
