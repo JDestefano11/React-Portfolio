@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/joedestefanowebdev.com%20/static/css/main.38da6703.css",
-    "main.js": "/joedestefanowebdev.com%20/static/js/main.c9a5eabc.js",
+    "main.js": "/joedestefanowebdev.com%20/static/js/main.7f59109c.js",
     "static/media/MoviesFlix-Hub.png": "/joedestefanowebdev.com%20/static/media/MoviesFlix-Hub.2c8b9d22b4c718eecd69.png",
     "static/media/Screenshot 2024-08-26 202451.png": "/joedestefanowebdev.com%20/static/media/Screenshot 2024-08-26 202451.ab4315f880b0e6d2360c.png",
     "static/media/453321966_511122678039876__n.png": "/joedestefanowebdev.com%20/static/media/453321966_511122678039876_4012628457751247270_n.b7f23dc9708b3dfcaeb8.png",
@@ -14,10 +14,10 @@
     "static/media/Coding.jpg": "/joedestefanowebdev.com%20/static/media/Coding.d21cef334d2dffdae3a8.jpg",
     "index.html": "/joedestefanowebdev.com%20/index.html",
     "main.38da6703.css.map": "/joedestefanowebdev.com%20/static/css/main.38da6703.css.map",
-    "main.c9a5eabc.js.map": "/joedestefanowebdev.com%20/static/js/main.c9a5eabc.js.map"
+    "main.7f59109c.js.map": "/joedestefanowebdev.com%20/static/js/main.7f59109c.js.map"
   },
   "entrypoints": [
     "static/css/main.38da6703.css",
-    "static/js/main.c9a5eabc.js"
+    "static/js/main.7f59109c.js"
   ]
 }
