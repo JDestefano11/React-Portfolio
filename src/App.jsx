@@ -15,6 +15,7 @@ import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import { MoviesFlixCaseStudy } from "./components/MoviesFlixCaseStudy";
 import { MeetAppCaseStudy } from "./components/Meet-AppCaseStudy";
+import { TrendHiveCaseStudy } from "./components/TrendHiveCaseStudy";
 
 const AppContent = () => {
   const location = useLocation();
@@ -58,6 +59,7 @@ const AppContent = () => {
             element={<MoviesFlixCaseStudy />}
           />
           <Route path="/meetapp-case-study" element={<MeetAppCaseStudy />} />
+          <Route path="/TrendHive" element={<TrendHiveCaseStudy />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

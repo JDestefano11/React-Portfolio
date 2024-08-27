@@ -5,8 +5,8 @@ import movieFlixHubImage from "../images/MoviesFlix-Hub.png";
 import meetAppImage from "../images/MeetAppCaseStudy.png";
 import movie from "../images/453321966_511122678039876_4012628457751247270_n.png";
 import chat from "../images/Chatapp.jpg";
-import ecom from '../images/Screenshot 2024-08-26 202451.png';
-import chatapp from '../images/chatapp.png';
+import ecom from "../images/Screenshot 2024-08-26 202451.png";
+import chatapp from "../images/chatapp.png";
 import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
@@ -16,7 +16,8 @@ export const Projects = () => {
     {
       id: 1,
       name: "Trend Hive Ecommerce Store",
-      description: "Trend Hive is a cutting-edge e-commerce store dedicated to delivering a seamless and enjoyable shopping experience for fashion enthusiasts of all ages. Our mission is to be the premier destination for high-quality, stylish clothing for the entire family. We offer a curated selection that includes the latest trends and timeless classics, ensuring that every family member finds something they love.",
+      description:
+        "Trend Hive is a cutting-edge e-commerce store dedicated to delivering a seamless and enjoyable shopping experience for fashion enthusiasts of all ages. Our mission is to be the premier destination for high-quality, stylish clothing for the entire family. We offer a curated selection that includes the latest trends and timeless classics, ensuring that every family member finds something they love.",
       image: ecom,
       liveUrl: "https://trend-hive.onrender.com/",
       caseStudyUrl: "https://project5.com/case-study",
@@ -33,14 +34,14 @@ export const Projects = () => {
       githubUrl: "https://github.com/JDestefano11/MoviesFlix-Hub.git",
     },
     {
-      id: 3, 
+      id: 3,
       name: "Chat Application",
-      description: "ChimeIn is a modern real-time chat application built with React and Firebase. It offers a seamless messaging experience with a clean, responsive interface. Key features include user authentication, real-time messaging, profile management, image sharing, and contact management. The app leverages React 18.3, Vite 5.4, and Firebase to deliver a fast, secure, and efficient communication platform. With its intuitive design and powerful functionality, ChimeIn is suitable for both personal and professional use, providing instant communication in a sleek, modern package.",
+      description:
+        "ChimeIn is a modern real-time chat application built with React and Firebase. It offers a seamless messaging experience with a clean, responsive interface. Key features include user authentication, real-time messaging, profile management, image sharing, and contact management. The app leverages React 18.3, Vite 5.4, and Firebase to deliver a fast, secure, and efficient communication platform. With its intuitive design and powerful functionality, ChimeIn is suitable for both personal and professional use, providing instant communication in a sleek, modern package.",
       image: chatapp,
       liveUrl: "https://chimein-eo3bjqwn1-jdestefano11s-projects.vercel.app/#/",
       caseStudyUrl: "https://project5.com/case-study",
-      githubUrl: "https://github.com/JDestefano11/ChimeIn.git"
-
+      githubUrl: "https://github.com/JDestefano11/ChimeIn.git",
     },
     {
       id: 4,
@@ -65,14 +66,13 @@ export const Projects = () => {
     {
       id: 6,
       name: "Chat App React Native (work in progress)",
-      description: 
+      description:
         "A mobile chat application developed with React Native, leveraging Firebase for real-time data synchronization and user authentication. This app allows users to create accounts, join chat rooms, and send instant messages. Firebase handles user authentication, message storage, and real-time updates, ensuring seamless communication. The application features a clean, intuitive interface and robust performance on both iOS and Android platforms, providing users with a reliable and engaging messaging experience.",
       image: chat,
       liveUrl: "https://project4.com",
       caseStudyUrl: "https://project4.com/case-study",
       githubUrl: "https://github.com/JDestefano11/Chat.git",
     },
-
   ];
 
   return (
@@ -115,11 +115,15 @@ export const Projects = () => {
                 >
                   Live Site
                 </a>
-                {project.id === 2 ? (
+                {project.id === 1 ? (
+                  <Link to="/TrendHive" className="project-link">
+                    Case Study
+                  </Link>
+                ) : project.id === 2 ? (
                   <Link to="/moviesflix-case-study" className="project-link">
                     Case Study
                   </Link>
-                ) : project.id === 3 ? (
+                ) : project.id === 4 ? (
                   <Link to="/meetapp-case-study" className="project-link">
                     Case Study
                   </Link>
@@ -131,6 +135,7 @@ export const Projects = () => {
                     Case Study
                   </Link>
                 )}
+
                 <a
                   href={project.githubUrl}
                   target="_blank"
