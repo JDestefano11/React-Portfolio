@@ -76,7 +76,7 @@ export const Footer = () => {
           <button
             onClick={() =>
               window.open(
-                `${process.env.PUBLIC_URL}/Joe-Destefano-Resume.pdf`,
+                `${process.env.PUBLIC_URL}/JoeDestefano-Resume.pdf`,
                 "_blank"
               )
             }

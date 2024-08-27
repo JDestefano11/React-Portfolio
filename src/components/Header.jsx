@@ -49,7 +49,7 @@ export const Header = () => {
             ))}
             <li>
               <a
-                href={`${process.env.PUBLIC_URL}/Joe-Destefano-Resume.pdf`}
+                href={`${process.env.PUBLIC_URL}/JoeDestefano-Resume.pdf`}
                 download="Joe_Destefano_Resume.pdf"
               >
                 Download Resume
